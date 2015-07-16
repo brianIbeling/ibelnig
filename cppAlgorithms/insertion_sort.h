@@ -24,9 +24,5 @@ public:
 };
 
 
-    
-    
-    
-
 #endif	/* INSERTION_SORT_H */
 

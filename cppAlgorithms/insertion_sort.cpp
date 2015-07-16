@@ -1,5 +1,7 @@
 #include "insertion_sort.h"
 
+using namespace std;
+
 int * InsertionSort::ExecuteInsertionSort(int array[], int arraySize, bool withArray){
     // Perform insertion sort with array
     if(withArray){
@@ -8,9 +10,6 @@ int * InsertionSort::ExecuteInsertionSort(int array[], int arraySize, bool withA
         for(int i=1; i<arraySize; i++) {
             tempValue = array[i];
             arrayPosition = swapPosition = i;
-            
-            cout << arrayPosition << endl;
-            cout << swapPosition << endl;
             
             // Move through array backwards, swapping values until correct position is found
 //            while()

@@ -9,6 +9,10 @@
 #define	INSERTION_SORT_H
 
 #include <iostream>
+#include <sstream>
+#include <vector>
+
+#define DEBUG false
 
 class InsertionSort {
 
@@ -16,13 +20,17 @@ public:
     
     // MEMBER FUNCTION
     int * ExecuteInsertionSort(int array[], int arraySize, bool withArray);
-    
-    // MEMBER VARIABLES
-    int arrayPosition;
-    int swapPosition;
-    int tempValue;
-};
+    void displayArray(int array[], int arraySize);
 
+private:
+    // PRIVATE MEMBER VARIABLES
+    int unsortedValuePosition;
+    int swapPosition;
+    int valueToSort;
+    int insertPosition;
+    
+    std::vector<int> mVector;
+};
 
 #endif	/* INSERTION_SORT_H */
 

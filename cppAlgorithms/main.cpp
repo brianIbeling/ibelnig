@@ -7,10 +7,24 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <sstream>
 #include "selection_sort.h"
 #include "insertion_sort.h"
 
+/*
+ *  Test cases
+ * 
+ * Small unsorted array (no dups)
+ * Small unsorted array (dups) 
+ * small sorted (no dups)
+ * small unsorted (dups)
+ * 
+ * large ^^
+ */
+
+
 int smallArray [5] = {4, 3, 5, 1, 2};
+int mediumArray [13] = {4, 3, 5, 1, 24, 3, 5, 1, 21, 3, 5, 1, 2};
 
 using namespace std;
 
@@ -24,20 +38,31 @@ int main(int argc, char** argv) {
     SelectionSort mSelectionSort;
     InsertionSort mInsertionSort;
     
-    int arraySize = sizeof(smallArray) / sizeof(smallArray[0]);
+    int arraySize = sizeof(mediumArray) / sizeof(mediumArray[0]);
 
-    int *sortedArray = mSelectionSort.ExecuteSelectionSort(smallArray, arraySize);
-    displayArray(sortedArray, arraySize);
-
-    sortedArray = mInsertionSort.ExecuteInsertionSort(smallArray, arraySize, true);
+    displayArray(mediumArray, arraySize);
     
-    return 1;
+//    int *sortedArray = mSelectionSort.ExecuteSelectionSort(mediumArray, arraySize);
+//    displayArray(sortedArray, arraySize);
+    
+    int *insertionSortArray = mInsertionSort.ExecuteInsertionSort(mediumArray, arraySize, false);
+    displayArray(insertionSortArray, arraySize);
+    
+    return 0;
 }
 
 
 void displayArray(int array[], int arraySize){
+    stringstream contents;
+    
+    contents << "{";
     for(int i=0; i<arraySize; i++){
-        cout << i << " : " << array[i] << endl;
+        contents << array[i];
+        if(i != arraySize-1)
+            contents << ", ";
     }
+    contents << "}";
+    
+    cout << contents.str() << endl;
 }
  

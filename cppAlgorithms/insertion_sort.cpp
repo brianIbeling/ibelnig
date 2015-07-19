@@ -26,9 +26,9 @@ int * InsertionSort::ExecuteInsertionSort(int array[], int arraySize, bool withA
             if(insertPosition-1 != swapPosition)
                 array[insertPosition] = valueToSort;
             
-#if DEBUG
-            displayArray(array, arraySize);
-#endif
+            #if DEBUG
+                displayArray(array, arraySize);
+            #endif
         }
         
     } else {
@@ -44,13 +44,9 @@ int * InsertionSort::ExecuteInsertionSort(int array[], int arraySize, bool withA
             int valueToInsert = mVector[i];
             insertPosition = i;
             
-            while(mVector[insertPosition-1] > valueToInsert && insertPosition >= 0 ){
-                if(insertPosition == 0)
-                    break;
-                
+            while(mVector[insertPosition-1] > valueToInsert && insertPosition > 0 ){
                 // Entered while loop, continue while until insert position is found
                 insertPosition -= 1;
-                
             }
             
             // Check if element is not largest in currently sorted array
@@ -59,9 +55,13 @@ int * InsertionSort::ExecuteInsertionSort(int array[], int arraySize, bool withA
                 mVector.erase(mVector.begin() + i);
                 mVector.insert(mVector.begin() + insertPosition, 1, valueToInsert); 
             }
+            #if DEBUG
+                displayArray(array, arraySize);
+            #endif
         }
         
         // Convert vector to array
+        // Just need to reference array to first element in vector
         array = &mVector[0];
     }
     return array;

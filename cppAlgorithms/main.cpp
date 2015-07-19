@@ -20,11 +20,13 @@
  * small unsorted (dups)
  * 
  * large ^^
+ * Negative numbers ^^
  */
 
 
 int smallArray [5] = {4, 3, 5, 1, 2};
-int mediumArray [13] = {4, 3, 5, 1, 24, 3, 5, 1, 21, 3, 5, 1, 2};
+int mediumArray [13] = {4, -3, 5, -1, 24, 3, 5, 1, -21, 3, 5, 1, 2};
+//int mediumArray [8] = {0,5,2,3,1,2,3,4};
 
 using namespace std;
 

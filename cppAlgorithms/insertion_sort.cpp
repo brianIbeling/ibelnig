@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int * InsertionSort::ExecuteInsertionSort(int array[], int arraySize, bool withArray){
+int *InsertionSort::ExecuteInsertionSort(int array[], int arraySize, bool withArray){
     if(withArray){
         // Perform insertion sort with array
         

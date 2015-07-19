@@ -17,12 +17,13 @@
 class InsertionSort {
 
 public:
-    
     // MEMBER FUNCTION
     int * ExecuteInsertionSort(int array[], int arraySize, bool withArray);
-    void displayArray(int array[], int arraySize);
-
+    
 private:
+    // PRIVATE FUNCTION
+    void displayArray(int array[], int arraySize);
+    
     // PRIVATE MEMBER VARIABLES
     int unsortedValuePosition;
     int swapPosition;

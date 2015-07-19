@@ -38,6 +38,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/bubble_sort.o \
 	${OBJECTDIR}/insertion_sort.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/merge_sort.o \
+	${OBJECTDIR}/quick_sort.o \
 	${OBJECTDIR}/selection_sort.o
 
 
@@ -79,6 +81,16 @@ ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/merge_sort.o: merge_sort.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/merge_sort.o merge_sort.cpp
+
+${OBJECTDIR}/quick_sort.o: quick_sort.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/quick_sort.o quick_sort.cpp
 
 ${OBJECTDIR}/selection_sort.o: selection_sort.cpp 
 	${MKDIR} -p ${OBJECTDIR}

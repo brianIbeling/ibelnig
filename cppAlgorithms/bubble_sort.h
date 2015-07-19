@@ -8,7 +8,21 @@
 #ifndef BUBBLE_SORT_H
 #define	BUBBLE_SORT_H
 
+#include <iostream>
 
+class BubbleSort{
+    
+public:
+    // PUBLIC FUNCTIONS
+    int *ExecuteBubbleSort(int array[], int arraySize);
+    
+private:
+    // PRIVATE FUNCTIONS
+    
+    // PRIVATE VARIABLES
+    int tempValue;
+    int numSwaps;
 
 #endif	/* BUBBLE_SORT_H */
 
+};

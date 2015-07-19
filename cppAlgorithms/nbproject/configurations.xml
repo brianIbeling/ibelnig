@@ -6,6 +6,8 @@
                    projectFiles="true">
       <itemPath>bubble_sort.h</itemPath>
       <itemPath>insertion_sort.h</itemPath>
+      <itemPath>merge_sort.h</itemPath>
+      <itemPath>quick_sort.h</itemPath>
       <itemPath>selection_sort.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -18,6 +20,8 @@
       <itemPath>bubble_sort.cpp</itemPath>
       <itemPath>insertion_sort.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>merge_sort.cpp</itemPath>
+      <itemPath>quick_sort.cpp</itemPath>
       <itemPath>selection_sort.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -51,6 +55,14 @@
       <item path="insertion_sort.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="merge_sort.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="merge_sort.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="quick_sort.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="quick_sort.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="selection_sort.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -86,6 +98,14 @@
       <item path="insertion_sort.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="merge_sort.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="merge_sort.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="quick_sort.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="quick_sort.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="selection_sort.cpp" ex="false" tool="1" flavor2="0">
       </item>

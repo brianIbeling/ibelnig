@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/bubble_sort.o \
+	${OBJECTDIR}/heap_sort.o \
 	${OBJECTDIR}/insertion_sort.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/merge_sort.o \
@@ -71,6 +72,11 @@ ${OBJECTDIR}/bubble_sort.o: bubble_sort.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/bubble_sort.o bubble_sort.cpp
+
+${OBJECTDIR}/heap_sort.o: heap_sort.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/heap_sort.o heap_sort.cpp
 
 ${OBJECTDIR}/insertion_sort.o: insertion_sort.cpp 
 	${MKDIR} -p ${OBJECTDIR}

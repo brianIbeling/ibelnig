@@ -9,6 +9,11 @@
 #define	BUBBLE_SORT_H
 
 #include <iostream>
+#include <sstream>
+
+#ifndef DEBUG
+#define DEBUG true
+#endif
 
 class BubbleSort{
     
@@ -18,10 +23,12 @@ public:
     
 private:
     // PRIVATE FUNCTIONS
+    void displayArray(int array[], int arraySize);
+    
     
     // PRIVATE VARIABLES
     int tempValue;
-    int numSwaps;
+    bool isSwapped;
 
 #endif	/* BUBBLE_SORT_H */
 

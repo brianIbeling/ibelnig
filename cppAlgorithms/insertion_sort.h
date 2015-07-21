@@ -12,7 +12,9 @@
 #include <sstream>
 #include <vector>
 
+#ifndef DEBUG
 #define DEBUG false
+#endif
 
 class InsertionSort {
 

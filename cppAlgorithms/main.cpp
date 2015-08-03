@@ -12,6 +12,7 @@
 #include "insertion_sort.h"
 #include "bubble_sort.h"
 #include "quick_sort.h"
+#include "merge_sort.h"
 
 
 /*
@@ -44,6 +45,8 @@ int main(int argc, char** argv) {
     InsertionSort mInsertionSort;
     BubbleSort mBubbleSort;
     QuickSort mQuickSort;
+    MergeSort mMergeSort;
+    
     
     int arraySize = sizeof(mediumArray) / sizeof(mediumArray[0]);
 
@@ -58,8 +61,11 @@ int main(int argc, char** argv) {
 //    int *bubbleSortArray = mBubbleSort.ExecuteBubbleSort(mediumArray, arraySize);
 //    displayArray(bubbleSortArray, arraySize);
     
-    int *quickSortArray = mQuickSort.ExecuteQuickSort(mediumArray, 0, arraySize-1);
-    displayArray(quickSortArray, arraySize);
+//    int *quickSortArray = mQuickSort.ExecuteQuickSort(mediumArray, 0, arraySize-1);
+//    displayArray(quickSortArray, arraySize);
+    
+    int *mergeSortArray = mMergeSort.ExecuteMergeSort(mediumArray, arraySize);
+    displayArray(mergeSortArray, arraySize);
     
     return 0;
 }

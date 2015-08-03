@@ -12,7 +12,7 @@
 #include <sstream>
 
 #ifndef DEBUG
-#define DEBUG true
+#define DEBUG false
 #endif
 
 class BubbleSort{

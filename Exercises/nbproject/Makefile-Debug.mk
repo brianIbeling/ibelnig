@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/LargestTelephoneSum.o \
+	${OBJECTDIR}/RandomGenerator.o \
 	${OBJECTDIR}/StringSplit.o \
 	${OBJECTDIR}/main.o
 
@@ -68,6 +69,11 @@ ${OBJECTDIR}/LargestTelephoneSum.o: LargestTelephoneSum.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/LargestTelephoneSum.o LargestTelephoneSum.cpp
+
+${OBJECTDIR}/RandomGenerator.o: RandomGenerator.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/RandomGenerator.o RandomGenerator.cpp
 
 ${OBJECTDIR}/StringSplit.o: StringSplit.cpp 
 	${MKDIR} -p ${OBJECTDIR}

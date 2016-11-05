@@ -35,9 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/LargestTelephoneSum.o \
-	${OBJECTDIR}/RandomGenerator.o \
-	${OBJECTDIR}/StringSplit.o \
+	${OBJECTDIR}/PlayerFunding.o \
+	${OBJECTDIR}/SlotMachine.o \
 	${OBJECTDIR}/main.o
 
 
@@ -59,26 +58,21 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exercises.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/slotmachine.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exercises.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/slotmachine.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exercises ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/slotmachine ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/LargestTelephoneSum.o: LargestTelephoneSum.cpp 
+${OBJECTDIR}/PlayerFunding.o: PlayerFunding.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/LargestTelephoneSum.o LargestTelephoneSum.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PlayerFunding.o PlayerFunding.cpp
 
-${OBJECTDIR}/RandomGenerator.o: RandomGenerator.cpp 
+${OBJECTDIR}/SlotMachine.o: SlotMachine.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/RandomGenerator.o RandomGenerator.cpp
-
-${OBJECTDIR}/StringSplit.o: StringSplit.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/StringSplit.o StringSplit.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SlotMachine.o SlotMachine.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -91,7 +85,7 @@ ${OBJECTDIR}/main.o: main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/exercises.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/slotmachine.exe
 
 # Subprojects
 .clean-subprojects:

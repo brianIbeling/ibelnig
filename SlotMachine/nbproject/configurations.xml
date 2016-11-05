@@ -4,9 +4,8 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>LargestTelephoneSum.h</itemPath>
-      <itemPath>RandomGenerator.h</itemPath>
-      <itemPath>StringSplit.h</itemPath>
+      <itemPath>PlayerFunding.h</itemPath>
+      <itemPath>SlotMachine.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -15,9 +14,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>LargestTelephoneSum.cpp</itemPath>
-      <itemPath>RandomGenerator.cpp</itemPath>
-      <itemPath>StringSplit.cpp</itemPath>
+      <itemPath>PlayerFunding.cpp</itemPath>
+      <itemPath>SlotMachine.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -41,18 +39,20 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <cTool>
+          <standard>10</standard>
+        </cTool>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
       </compileType>
-      <item path="LargestTelephoneSum.cpp" ex="false" tool="1" flavor2="0">
+      <item path="PlayerFunding.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="LargestTelephoneSum.h" ex="false" tool="3" flavor2="0">
+      <item path="PlayerFunding.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="RandomGenerator.cpp" ex="false" tool="1" flavor2="0">
+      <item path="SlotMachine.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="RandomGenerator.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="StringSplit.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="StringSplit.h" ex="false" tool="3" flavor2="0">
+      <item path="SlotMachine.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -77,17 +77,13 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="LargestTelephoneSum.cpp" ex="false" tool="1" flavor2="0">
+      <item path="PlayerFunding.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="LargestTelephoneSum.h" ex="false" tool="3" flavor2="0">
+      <item path="PlayerFunding.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="RandomGenerator.cpp" ex="false" tool="1" flavor2="0">
+      <item path="SlotMachine.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="RandomGenerator.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="StringSplit.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="StringSplit.h" ex="false" tool="3" flavor2="0">
+      <item path="SlotMachine.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
